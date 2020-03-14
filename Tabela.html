@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela</title>
+
+    <style>
+
+        body{
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 200px 1fr;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header{
+            background-color: blueviolet;
+            grid-area: 1/ 1/ 2/ 3;
+        }
+        nav{
+            background-color: greenyellow;
+        }
+        main {
+            background-color: red;
+        }
+        footer{
+            background-color: yellow;
+            grid-area: 3/ 1/ 4/ 3;
+        }
+    </style>
+</head>
+<body>
+    <!--Comentário-->
+    <header>Cabeçalho</header>
+   
+    <nav>
+        Menu 
+        <ul>
+            <li>Patrícia</li>
+            <li>Helena</li>
+            <li>Lucas</li>
+            <li>Matheus</li>
+        </ul>
+    </nav>
+
+    <main>
+        <span>Conteúdo</span>
+        <article>Sub-Conteudo1</article>
+        <article>Sub-Conteudo2</article>
+        <article>Sub-Conteudo3</article>
+        <article>Sub-Conteudo4</article>
+    </main>
+
+    <footer>
+        <div class="logo">Logo</div>
+        <div class="contato">Contato</div>
+    </footer>
+</body>
+</html>
